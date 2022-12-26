@@ -7,4 +7,14 @@ buttons.addEventListener("click", function () {
   signin.classList.remove("hidden");
   overlay.classList.remove("hidden");
 });
-label.addEventListener("click", function () {});
+
+overlay.addEventListener("click", function () {
+  signin.classList.add("hidden");
+  overlay.classList.add("hidden");
+});
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !signin.classList.contains("hidden")) {
+    overlay.classList.add("hidden");
+    signin.classList.add("hidden");
+  }
+});

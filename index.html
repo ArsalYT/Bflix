@@ -10,17 +10,41 @@
   <body>
     <div id="mainnnn">
       <div id="main">
-        <img src="netflix.png" alt="" />
+        <img id="netflix" src="netflix.png" alt="" />
         <div>
           <button class="buttons">Sign In</button>
         </div>
       </div>
       <div id="second">
+        <div class="signin hidden">
+          <h1 style="color: white">Sign In</h1>
+          <br /><br />
+          <form>
+            <input
+              class="input"
+              type="email"
+              placeholder="Email address"
+            /><br /><br />
+            <input
+              class="input"
+              type="password"
+              name="password"
+              id="pass"
+              placeholder="Password"
+            /><br /><br />
+            <button id="signinb">Sign In</button>
+            <br /><br />
+            <input type="checkbox" value="lsRememberMe" id="rememberMe" />
+            <label for="rememberMe" style="color: lightgray">Remember me</label>
+            <label class="label" style="float: right">Need help?</label>
+          </form>
+        </div>
         <h1 id="heading2">
           Unlimited movies, TV<br />
           shows, and more.
         </h1>
         <br />
+
         <h2>Watch anywhere. Cancel anytime.</h2>
         <br />
         <br />
@@ -35,28 +59,61 @@
         </div>
       </div>
     </div>
-    <div class="signin hidden">
-      <h1 style="color: white">Sign In</h1>
-      <br /><br />
-      <form>
-        <input
-          class="input"
-          type="email"
-          placeholder="Email address"
-        /><br /><br />
-        <input
-          class="input"
-          type="password"
-          name="password"
-          id="pass"
-          placeholder="Password"
-        /><br /><br />
-        <button id="signinb">Sign In</button>
-        <br /><br />
-        <input type="checkbox" value="lsRememberMe" id="rememberMe" />
-        <label for="rememberMe" style="color: lightgray">Remember me</label>
-        <label class="label" style="float: right">Need help?</label>
-      </form>
+    <div id="videodiv">
+      <div>
+        <h1 class="headings1">Enjoy on your TV</h1>
+        <h2 class="headings2">
+          Watch on Smart TVs, Playstation, Xbox,<br />
+          Chromecast, Apple TV, Blu-ray players, and more.
+        </h2>
+      </div>
+      <div id="videocontainer">
+        <video
+          id="bflix"
+          src="Bflix.m4v"
+          autoplay
+          muted
+          loop
+          width="500px"
+          height="200px"
+        ></video>
+      </div>
+    </div>
+    <div id="offline-shows">
+      <div>
+        <img id="offlineimg" src="bfliximg.jpg" alt="" />
+      </div>
+      <div id="headingtext">
+        <h1 class="headings1">Download your shows to watch offline</h1>
+        <h2 class="headings2">
+          Save your favorites easily and always have <br />
+          something to watch.
+        </h2>
+      </div>
+    </div>
+    <div id="watch">
+      <h1 class="headings1">Watch everywhere.</h1>
+      <h2 class="headings2">
+        Stream unlimited movies and TV shows on <br />
+        your phone, tablet, laptop, and TV.
+      </h2>
+    </div>
+    <div id="kids">
+      <div>
+        <img id="kidsimg" src="kids.png" alt="" />
+      </div>
+      <div id="textdiv">
+        <h1 class="headings1">Create profiles for kids.</h1>
+        <h2 class="headings2">
+          Send kids on adventures with their favorite characters in a space made
+          just for them—free with your membership.
+        </h2>
+      </div>
+    </div>
+    <div id="faq">
+      <div id="faqhead">
+        <h1 class="headings1">Frequently Asked Questions</h1>
+      </div>
     </div>
     <div class="overlay hidden"></div>
     <script src="script.js"></script>
