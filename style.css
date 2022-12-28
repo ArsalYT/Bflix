@@ -13,6 +13,7 @@ body {
   height: 100vh;
   background-size: cover;
   border-bottom: 8px solid #222;
+  padding-bottom: 46em;
 }
 #main {
   display: flex;
@@ -62,14 +63,16 @@ h4 {
   border: none;
   color: white;
   font-size: 15px;
-  margin-right: 40px;
+  /* margin-right: 40px; */
 }
 #butt {
   background-color: #e50914;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
   border: none;
   color: white;
   width: 180px;
-  font-size: 25px;
+  font-size: 26px;
 }
 #butt:hover,
 .buttons:hover,
@@ -102,6 +105,10 @@ h4 {
   width: 100%;
   padding: 5%;
 }
+#rememberMe,
+#rememberMe ~ label {
+  float: left;
+}
 label {
   color: lightgray;
   font-family: Arial, Helvetica, sans-serif;
@@ -128,6 +135,7 @@ label:hover {
   background-color: black;
   padding: 6rem 6rem 2rem 6rem;
   border-bottom: 8px solid #222;
+  justify-content: space-around;
 }
 .headings1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -144,19 +152,27 @@ label:hover {
   font-size: 26px;
   margin-top: 10px;
 }
+#videodiv .headings2 {
+  padding-right: 9rem;
+}
+#videodiv {
+  overflow: hidden;
+  padding: 6rem 4rem;
+}
 #videocontainer {
-  background: url(tv.png) no-repeat transparent -6%;
-  width: 567px;
-  height: 300px;
+  /* width: 567px;
+  height: 300px; */
   position: relative;
   z-index: 10;
 }
 #videocontainer video {
-  position: absolute;
-  top: 10px;
-  left: 72px;
-  width: 500px;
-  height: 265px;
+  /* position: absolute; */
+  /* top: 10px; */
+  float: right;
+  /* left: 72px; */
+  /* width: 500px; */
+  height: auto;
+  max-width: 100%;
   z-index: 5;
 }
 #offline-shows {
@@ -174,22 +190,25 @@ label:hover {
   padding-left: 80px;
 }
 #watch {
-  padding: 2rem 5rem 2rem 8rem;
+  padding: 5rem;
   background-color: black;
   border-bottom: 8px solid #222;
 }
 #kids {
   display: flex;
-  padding: 5rem 5rem 2rem 6rem;
+  padding: 4rem 1rem 4rem 4rem;
   background-color: black;
   border-bottom: 8px solid #222;
 }
 #textdiv {
   margin-top: 50px;
+  padding-left: 20rem;
 }
 #kidsimg {
-  width: 550px;
-  padding-right: 50px;
+  margin-top: 20px;
+  border: 0;
+  height: auto;
+  max-width: 150%;
 }
 #faq {
   background-color: black;
@@ -198,3 +217,91 @@ label:hover {
   text-align: center;
   padding-top: 5%;
 }
+@media screen and (max-width: 960px) {
+  #field {
+    display: block;
+  }
+  #butt {
+    margin-top: 0.8rem;
+    font-size: 16px;
+    padding: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    width: auto;
+    border-radius: 4px;
+  }
+  h4 {
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 25%;
+  }
+  #form1 {
+    width: 30rem;
+    height: 10%;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    max-width: 100%;
+  }
+  #videohead {
+    padding-bottom: 2rem;
+  }
+  #videodiv {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  #videocontainer {
+    display: flex;
+    justify-content: center;
+  }
+  #mainnnn {
+    padding-bottom: 50em;
+  }
+  #offline-shows {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  #offlineimg {
+    width: auto;
+    margin-top: 2%;
+    padding: 0%;
+    max-width: 100%;
+  }
+  #headingtext {
+    padding-left: 0%;
+  }
+  .headings1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .headings2,
+  #videodiv .headings2 {
+    font-size: 20px;
+    padding: 0%;
+  }
+  #watch {
+    text-align: center;
+    padding: 6rem;
+  }
+  #watch h1 {
+    font-size: 40px;
+  }
+  #watch h2 {
+    font-size: 20px;
+  }
+  #kids {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  #textdiv {
+    padding: 0%;
+  }
+  #kidsimg {
+    max-width: 100%;
+  }
+  .buttons {
+    max-width: 100%;
+  }
+} ;
